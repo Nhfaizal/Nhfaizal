@@ -1,10 +1,9 @@
-- 👋 Hi, I’m @faizal
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+perintah:
 
-<!---
-Nhfaizal/Nhfaizal is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+**Termux:**
+* `pkg install python2`
+* `pip2 install requests`
+* `pkg install git`
+* `git clone https://github.com/Nhfaizal/Nhfaizal`
+* `cd Nhfaizal`
+* `python2 Nhfaizal.py`
