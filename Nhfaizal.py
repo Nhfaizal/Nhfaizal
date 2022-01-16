@@ -1,0 +1,127 @@
+#!/usr/bin/python
+#######################
+#  Death Girls Xploite Team  #
+#######################
+mess = """======================================================
+             Deface Script Creator
+======================================================"""
+
+print mess
+print "Created by Death Girls Xploite Team"
+title = raw_input("Judul title: ")
+heading = raw_input("Hacked by: ")
+imagelink = raw_input("link gambar (tengah): ")
+bgimage = raw_input("link  background: ")
+message = raw_input("Pesan. gunakan kode <br> untuk text selanjutnya! : ")
+textcolor = raw_input("Warna text: ")
+youtubeid = raw_input("Link Musik: ")
+
+
+#Open the index
+fo = open("Death.html","w")
+
+messagescript1 = """<html><head><title>"""
+
+messagescript2 = title
+
+messagescript3 = """</title></head>
+<body>
+<br>
+<link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type=>
+<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/c>
+<link href='http://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet' type=>
+<body bgcolor="#000000" background ="""
+messagescript4 = bgimage
+
+messagescript5 = """><div class='CenterDiv'>
+<center>
+<h1><center><font color=\"white\" face=Orbitron>"""
+
+messagescript6 = heading
+
+messagescript7 = """<h1></font>
+<img src="""
+
+messagescript8 = imagelink
+
+messagescript9 = """ width=450px height=340px>
+<body onload="init()"></body>
+<body>
+<div id="bulle"></div>"""
+
+messagescript10 = """
+<script language=\"JavaScript\">
+var i=0
+var j=0
+var texteNE, affiche
+var texte=\"<br><br><br><br><br><font face=Orbitron color="""
+
+messagescript11 = textcolor
+
+messagescript12 = """ size=4>"""
+messagescript13 = message
+
+messagescript14 = """<br><br></font><br></b></div>\"
+var ie = (document.all);
+var ne = (document.layers);
+function init(){
+texteNE='';
+machine_a_ecrire();
+}
+function machine_a_ecrire(){
+texteNE=texteNE+texte.charAt(i)
+affiche='<font face=Orbitron size=1 color=#ffffff><strong>Messenge : '+texteNE+'</stron>
+if (texte.charAt(i)=="<") {
+j=1
+}
+if (texte.charAt(i)==">") {
+j=0
+}
+if (j==0) {
+if (document.getElementById) { // avec internet explorer
+document.getElementById("bulle").innerHTML = affiche;
+}
+}
+if (i<texte.length-1){
+i++
+setTimeout("machine_a_ecrire()",70)
+}
+else
+return
+}
+</script><font face="Orbitron" size="1"><blink><span style="color: rgb(255, 255, 255);">
+<a href="/index.php"><img style="position:fixed;bottom:0px;z-index:1000;right:-10px;"  >
+<!-- CSS --><style>
+.CenterDiv{width:650px;border:1px #ff0000 solid;padding:5px;margin:0px auto; background>
+</style>
+<br>
+<br>
+<br>
+<iframe width="0" height="0" src="https://"""
+
+messagescript15 = link
+
+messagescript16 = """&autoplay=1" frameborder="0"></iframe>"""
+
+
+fo.write(messagescript1)
+fo.write(messagescript2)
+fo.write(messagescript3)
+fo.write(messagescript4)
+fo.write(messagescript5)
+fo.write(messagescript6)
+fo.write(messagescript7)
+fo.write(messagescript8)
+fo.write(messagescript9)
+fo.write(messagescript10)
+fo.write(messagescript11)
+fo.write(messagescript12)
+fo.write(messagescript13)
+fo.write(messagescript14)
+fo.write(messagescript15)
+fo.write(messagescript16)
+
+print "Script Berhasil Di buat!"
+print "By Death Girls Xploite Team"
+
+fo.close()
